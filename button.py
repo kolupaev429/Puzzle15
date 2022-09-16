@@ -7,16 +7,9 @@ pygame.init()
 
 
 class Button:
-    screen = None
-    pressed_method = None
-    height = 100
-    width = 100
-    x_coordinate = 0
-    y_coordinate = 0
-    text = ""
     basic_font = pygame.font.SysFont(None, 24)
 
-    def __init__(self, scr, x, y, func, w=width, h=height, txt=text):
+    def __init__(self, scr, x, y, func, w=100, h=100, txt=""):
         self.screen = scr
         self.x_coordinate = x
         self.y_coordinate = y
